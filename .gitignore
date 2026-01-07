@@ -7,5 +7,6 @@ build/
 dist/
 env/
 ycnbc.egg-info/
-test_results/
+results_test/
 ..mypy_cache/
+latest.py

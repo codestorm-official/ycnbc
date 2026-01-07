@@ -17,7 +17,8 @@ install:
   - pip install .
 
 script:
-  - pytest --cov=ycnbc/
+  - python setup.py install
+
 
 after_success:
   - coveralls

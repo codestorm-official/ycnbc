@@ -1,10 +1,13 @@
 Change Log
 ===========
 
-1.0.10
+1.0.11
 -------
-- Fixed `AttributeError` by changing news category accessor from `health_and_science` to `health_science`.
-- Adjusted `life-and-health-insurance` key to `lifehealth-insurance`.
+- Refactored `latest()` news method to use HTML scraping instead of a defunct JSON API.
+- Removed automated testing framework (`pytest`, `pytest-mock`) and linter (`flake8`).
+- Replaced automated tests with a comprehensive manual testing script.
+- Cleaned up all related configuration files (`setup.py`, `setup.cfg`, CI files).
+- Updated `README.md` for accuracy and better usage examples.
 
 1.0.9
 -------

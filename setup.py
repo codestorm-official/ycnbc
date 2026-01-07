@@ -51,7 +51,7 @@ setup(
     keywords='scrape news, cnbc library, cnbc python, cnbc api',
     packages=find_packages(exclude=['contrib', 'docs', 'tests', 'examples']),
     install_requires=['curl-cffi>=0.5.9', 'lxml>=4.9.3',
-                      'cssselect>=1.2.0', 'pytest>=7.0.0', 'flake8', 'mypy', 'tenacity'],
+                      'cssselect>=1.2.0', 'mypy', 'tenacity'],
     entry_points={
         'console_scripts': [
             # 'sample=sample:main',

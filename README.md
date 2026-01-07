@@ -33,7 +33,8 @@ ycnbc is **not** affiliated, endorsed, or vetted by CNBC, It's an open source to
 
 - Python >=3.8+
 - curl-cffi>=0.5.9
-- lxml>=4.5.1
+- lxml>=4.9.3
+- cssselect>=1.2.0
 
 ---
 ### Installation
@@ -70,48 +71,48 @@ import ycnbc
 news = ycnbc.News()
 
 # Get trending news
-trending_ = news.trending()
+trending_news = news.trending()
 
 # Get latest news
-latest_ = news.latest()
+latest_news = news.latest()
 
 # Get news by category
-economy_ = news.economy()
-jobs_ = news.jobs()
-white_house_ = news.white_house()
-hospitals_ = news.hospitals()
-transportation_ = news.transportation()
-media_ = news.media()
-internet_ = news.internet()
-congress_ = news.congress()
-policy_ = news.policy()
-finance_ = news.finance()
-life_ = news.life()
-defense_ = news.defense()
-europe_politics_ = news.europe_politics()
-china_politics_ = news.china_politics()
-asia_politics_ = news.asia_politics()
-world_politics_ = news.world_politics()
-equity_opportunity_ = news.equity_opportunity()
-politics_ = news.politics()
-wealth_ = news.wealth()
-world_economy_ = news.world_economy()
-central_banks_ = news.central_banks()
-real_estate_ = news.real_estate()
-health_science_ = news.health_science()
-small_business_ = news.small_business()
-lifehealth_insurance_ = news.lifehealth_insurance()
-business_ = news.business()
-energy_ = news.energy()
-industrials_ = news.industrials()
-retail_ = news.retail()
-cybersecurity_ = news.cybersecurity()
-mobile_ = news.mobile()
-technology_ = news.technology()
-cnbc_disruptors_ = news.cnbc_disruptors()
-tech_guide_ = news.tech_guide()
-social_media_ = news.social_media()
-climate_ = news.climate()
+economy_news = news.economy()
+jobs_news = news.jobs()
+white_house_news = news.white_house()
+hospitals_news = news.hospitals()
+transportation_news = news.transportation()
+media_news = news.media()
+internet_news = news.internet()
+congress_news = news.congress()
+policy_news = news.policy()
+finance_news = news.finance()
+life_news = news.life()
+defense_news = news.defense()
+europe_politics_news = news.europe_politics()
+china_politics_news = news.china_politics()
+asia_politics_news = news.asia_politics()
+world_politics_news = news.world_politics()
+equity_opportunity_news = news.equity_opportunity()
+politics_news = news.politics()
+wealth_news = news.wealth()
+world_economy_news = news.world_economy()
+central_banks_news = news.central_banks()
+real_estate_news = news.real_estate()
+health_science_news = news.health_and_science()
+small_business_news = news.small_business()
+life_insurance_news = news.life_and_health_insurance()
+business_news = news.business()
+energy_news = news.energy()
+industrials_news = news.industrials()
+retail_news = news.retail()
+cybersecurity_news = news.cybersecurity()
+mobile_news = news.mobile()
+technology_news = news.technology()
+cnbc_disruptors_news = news.cnbc_disruptors()
+tech_guide_news = news.tech_guide()
+social_media_news = news.social_media()
+climate_news = news.climate()
 ```
 
 Note:

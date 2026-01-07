@@ -17,6 +17,6 @@ class News:
         # Convert method name (e.g., "europe_politics") to category string (e.g., "europe-politics")
         category_name = name.replace('_', '-')
         if category_name in _NEWS_URI_:
-            return lambda: self.news.by_category(category_name)
+            return lambda: self.news.by_category(_NEWS_URI_[category_name])
         raise AttributeError(
             f"'{type(self).__name__}' object has no attribute '{name}'")
