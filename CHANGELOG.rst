@@ -1,6 +1,11 @@
 Change Log
 ===========
 
+1.0.10
+-------
+- Fixed `AttributeError` by changing news category accessor from `health_and_science` to `health_science`.
+- Adjusted `life-and-health-insurance` key to `lifehealth-insurance`.
+
 1.0.9
 -------
 - Change `requests` to `curl-cffi`
