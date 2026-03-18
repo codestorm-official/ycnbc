@@ -1,7 +1,7 @@
 Change Log
 ===========
 
-1.0.11
+1.0.12
 -------
 - Refactored `latest()` news method to use HTML scraping instead of a defunct JSON API.
 - Removed automated testing framework (`pytest`, `pytest-mock`) and linter (`flake8`).

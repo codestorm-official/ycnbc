@@ -91,16 +91,20 @@ class CNBCNewsUtils:
                 headline_list = element.xpath(".//a[contains(@class, 'Card-title')]/text()")
                 link_list = element.xpath(".//a[contains(@class, 'Card-title')]/@href")
                 time_list = element.xpath(".//span[contains(@class, 'Card-time')]/text()")
+                
+                # Combined XPath for both 'Card-pro' and 'InvestingClubPill-investingClubPillLink'
+                tag_list = element.xpath(".//div[contains(@class, 'Card-pro')]//svg/@alt | .//a[contains(@class, 'InvestingClubPill-investingClubPillLink')]//svg/@alt")
 
                 headline = ' '.join(headline_list).strip() if headline_list else None
                 link = link_list[0] if link_list else None
                 time = ' '.join(time_list).strip() if time_list else None
+                tag = ', '.join(tag_list).strip() if tag_list else None
                 
                 if headline and link:
                     # Ensure the link is absolute
                     if link.startswith('/'):
                         link = f"https://www.cnbc.com{link}"
-                    parsed_news.append({'headline': headline, 'time': time, 'link': link})
+                    parsed_news.append({'headline': headline, 'time': time, 'link': link, 'tag': tag})
 
             return parsed_news
         except Exception as e:
